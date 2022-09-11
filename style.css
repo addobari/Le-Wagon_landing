@@ -1,0 +1,102 @@
+/* Write some CSS below */
+body{
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Chivo', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #10297c;
+    transition: 1s;
+}
+
+/* customized style */
+
+.banner{
+    background-image: url(images/background.jpg);
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 64px;
+}
+
+.button-blue{
+    background-color: blue;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0 0 16px rgba(255,255,255,0.1);
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.card-white{
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0 0 0 / 30%);
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.card-white img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.card-white p {
+    margin: 0;
+}
+
+.footer{
+    background-color: #404042;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    margin:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+@media(max-width: 800px){
+    .cards {
+        grid-template-columns: 1fr;
+      }
+      
+      .card-white {
+        width: auto;
+      }
+}
+
+@media (min-width: 500px) {
+    .container {
+      width: 400px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .container {
+      width: 600px;
+    }
+}
+  
+@media (min-width: 1000px) {
+    .container {
+      width: 800px;
+    }
+}
